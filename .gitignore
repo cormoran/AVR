@@ -1,3 +1,7 @@
+#emacs backup files
+*~
+*#
+
 # Object files
 *.o
 *.ko
@@ -26,4 +30,10 @@
 *.app
 *.i*86
 *.x86_64
-*.hex
+#*.hex
+
+#Doxygen Files
+*Document*
+Doxyfile
+#xcode files
+*.xcodeproj*
