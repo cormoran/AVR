@@ -5,9 +5,9 @@ AVRマイコン向けのプロジェクトやライブラリなど。
 
 開発環境
 ---------
-（主に）MacOS X CrossPack for AVR の avr-gcc
+主にMacOS X CrossPack for AVR (20131216) の avr-gcc
 たまに Windows8.1 Atmel studio 6 になるかもしれない
-
+avr-libc in version 1.8.0
 使い方
 ---------
 各プロジェクトごとにfirmwareフォルダがあるのでその中で make するとコンパイルできる。  
@@ -18,5 +18,4 @@ Windowsではまだ使ってないのでわからない。
 ---------
 MIT Lisense
 
-※このプロジェクト全体で avr-libc というライブラリを使っています。（CrossPackにバンドルされている）  
-.hexファイルに関して、そのライセンス表記はこのディレクトリの LISENSE_avr_libc にあります。
+hexファイルに関して、avr-libcのライセンス表記はLISENSE_avr_libc にあります。
