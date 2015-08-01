@@ -5,14 +5,21 @@ AVRマイコン向けのプロジェクトやライブラリなど。
 
 開発環境
 ---------
-主にMacOS X CrossPack for AVR (20131216) の avr-gcc
+主にMacOS X CrossPack for AVR (20131216) の avr-gcc  
+avr-libc version 1.8.0  
+avrdude  version 6.0.1  
 たまに Windows8.1 Atmel studio 6 になるかもしれない
-avr-libc in version 1.8.0
+
 使い方
 ---------
-各プロジェクトごとにfirmwareフォルダがあるのでその中で make するとコンパイルできる。  
-.hexファイルもつけてあるのでそれを使って直接書き込んでも良い。  
-Windowsではまだ使ってないのでわからない。
+Makefileがあるところで make するとコンパイルできる。  
+.hexファイルがつけてある場合はそれを使って直接書き込んでも良い。  
+fuseビット設定はMakefile内に書いてある。
+
+Makefileでライタ等を設定すれば  
+`make install`  
+でfuse書き込み、プログラム書き込みをしてくれるようになる。
+
 
 ライセンス
 ---------
